@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flow Disc – recenze, fakta a trocha počítání | Floudisc.cz</title>
+<meta name="description" content="Uvažujete o Flow Discu za 12 000 Kč? Nezávislý průvodce zázračným betonovým diskem: co je uvnitř, co tvrdí výrobce, co říká fyzika a co si za ty peníze pořídit místo něj.">
+<link rel="canonical" href="https://floudisc.cz/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Flow Disc – fakta, fyzika a trocha počítání">
+<meta property="og:description" content="Betonový disk za 12 000 Kč, který „očišťuje od škodlivého záření“. Spočítali jsme, kolik váží miliarda atomů zlata. Ušetříte 11 800 Kč za 5 minut čtení.">
+<meta property="og:url" content="https://floudisc.cz/">
+<meta property="og:image" content="https://floudisc.cz/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%238a8578'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23c9a227' stroke-width='6'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Funguje Flow Disc?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pro tvrzené účinky Flow Discu (harmonizace čaker, čištění vzduchu, ochrana před zářením, tvarové záření) neexistují žádné vědecké důkazy a neodpovídají známé fyzice. Subjektivní pocit zlepšení lze dobře vysvětlit placebo efektem a relaxačním rituálem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Z čeho je Flow Disc vyroben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Podle výrobce jde o směs CCB: cca 40 % drceného křišťálu (krystalického křemene), 20 % barytu a pojivo označované obchodním názvem CARBOMETUM®, plus „miliardy atomů“ zlata a platiny. Materiálově jde o kompozit typu kamenivo + pojivo, tedy v principu betonový výrobek. Miliarda atomů zlata váží asi 0,33 pikogramu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik stojí Flow Disc?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základní Flow Disc stojí 12 000 Kč, ručně upravované verze 14 400–15 500 Kč a „živý“ disk na zakázku 18 800 Kč. Disk váží 5,5 kg, vychází tedy zhruba na 2 180 Kč za kilogram materiálu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je Flow Disc podvod?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To nechme na posouzení každého čtenáře. Konstatujeme jen fakta: jde o kompozitní (betonový) disk prodávaný za 12 000 Kč, jehož deklarované účinky nejsou podloženy žádnými důkazy a odporují současnému vědeckému poznání."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#f4f2ed;
+    --bg-card:#fdfcfa;
+    --ink:#26241f;
+    --ink-soft:#5c584e;
+    --line:#dedacf;
+    --gold:#a5811f;
+    --gold-strong:#8a6a12;
+    --concrete:#8a8578;
+    --quote-bg:#efeadf;
+    --shadow:0 1px 2px rgba(38,36,31,.06),0 8px 24px rgba(38,36,31,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#191813;
+      --bg-card:#22201a;
+      --ink:#e9e5da;
+      --ink-soft:#a8a294;
+      --line:#38352c;
+      --gold:#d4af37;
+      --gold-strong:#e5c453;
+      --concrete:#6e6a5f;
+      --quote-bg:#2a2720;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--ink);
+    font:400 1.05rem/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 1.25rem}
+  h1,h2,h3,.display{font-family:ui-serif,Georgia,"Times New Roman",serif;line-height:1.2;letter-spacing:-.01em}
+  a{color:var(--gold-strong)}
+  a:hover{text-decoration-thickness:2px}
+
+  /* hero */
+  header{padding:4.5rem 0 3.5rem;text-align:center;position:relative;overflow:hidden}
+  .disc{
+    width:150px;height:150px;margin:0 auto 2rem;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #a29d90, var(--concrete) 60%, #6e6a5f);
+    position:relative;box-shadow:var(--shadow);
+  }
+  .disc::before{content:"";position:absolute;inset:22px;border-radius:50%;border:3px solid rgba(255,255,255,.25)}
+  .disc::after{content:"";position:absolute;inset:48px;border-radius:50%;border:3px solid var(--gold);opacity:.85}
+  .kicker{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+  h1{font-size:clamp(2rem,5.5vw,3.1rem);margin-bottom:1.1rem}
+  .lede{font-size:1.2rem;color:var(--ink-soft);max-width:38em;margin:0 auto 2rem}
+  .lede strong{color:var(--ink)}
+  .cta{
+    display:inline-block;background:var(--gold);color:#fff;text-decoration:none;
+    padding:.8rem 1.6rem;border-radius:999px;font-weight:600;box-shadow:var(--shadow);
+    transition:transform .15s ease;
+  }
+  .cta:hover{transform:translateY(-2px)}
+  @media (prefers-color-scheme: dark){ .cta{color:#191813} }
+
+  /* sections */
+  section{padding:3rem 0;border-top:1px solid var(--line)}
+  .secnum{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.5rem}
+  h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:1.2rem}
+  section p{margin-bottom:1rem;max-width:44em}
+  .note{font-size:.9rem;color:var(--ink-soft)}
+
+  /* fact grid */
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.9rem;margin:1.5rem 0}
+  .fact{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;box-shadow:var(--shadow)}
+  .fact b{display:block;font-size:1.35rem;font-family:ui-serif,Georgia,serif}
+  .fact span{font-size:.85rem;color:var(--ink-soft)}
+
+  table{width:100%;border-collapse:collapse;margin:1.4rem 0;background:var(--bg-card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  th,td{padding:.7rem .9rem;text-align:left;border-bottom:1px solid var(--line);font-size:.97rem}
+  th{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft)}
+  tr:last-child td{border-bottom:none}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  tr.hl td{background:var(--quote-bg);font-weight:600}
+  .tablebox{overflow-x:auto}
+
+  /* claims */
+  .claim{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.5rem;margin:1.1rem 0;box-shadow:var(--shadow)}
+  .claim blockquote{
+    font-family:ui-serif,Georgia,serif;font-size:1.15rem;font-style:italic;
+    background:var(--quote-bg);border-left:3px solid var(--gold);
+    padding:.7rem 1rem;border-radius:0 8px 8px 0;margin-bottom:.9rem;
+  }
+  .claim .src{font-size:.8rem;color:var(--ink-soft);font-style:normal;display:block;margin-top:.35rem}
+  .claim .verdict{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.2rem .6rem;border-radius:999px;display:inline-block;margin-bottom:.6rem}
+  .v-no{background:#c0392b;color:#fff}
+  .v-meh{background:#b9770e;color:#fff}
+  .v-yes{background:#1e8449;color:#fff}
+
+  /* calculator */
+  .calc{background:var(--bg-card);border:1px solid var(--gold);border-radius:16px;padding:1.6rem;box-shadow:var(--shadow);margin:1.5rem 0}
+  .calc label{font-weight:600;display:block;margin-bottom:.4rem}
+  .calc input[type=range]{width:100%;accent-color:var(--gold);margin:.6rem 0 1rem}
+  .calc .readout{font-family:ui-serif,Georgia,serif;font-size:clamp(1.2rem,3.5vw,1.6rem);margin-bottom:1rem}
+  .calc .readout b{color:var(--gold-strong)}
+  .calc .rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem}
+  .calc .row{background:var(--quote-bg);border-radius:10px;padding:.8rem 1rem}
+  .calc .row b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}
+  .calc .row span{font-size:.82rem;color:var(--ink-soft)}
+
+  /* alternatives */
+  ul.alt{list-style:none;margin:1.2rem 0}
+  ul.alt li{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:.75rem 1rem;margin-bottom:.55rem;display:flex;justify-content:space-between;gap:1rem;box-shadow:var(--shadow)}
+  ul.alt li b{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .alt-total{display:flex;justify-content:space-between;font-weight:700;padding:.75rem 1rem;border-top:2px solid var(--gold)}
+
+  /* faq */
+  details{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;margin-bottom:.6rem;box-shadow:var(--shadow)}
+  summary{cursor:pointer;font-weight:600;padding:.85rem 1.1rem}
+  details p{padding:0 1.1rem 1rem}
+
+  footer{border-top:1px solid var(--line);padding:2.5rem 0 3.5rem;font-size:.85rem;color:var(--ink-soft)}
+  footer p{margin-bottom:.8rem;max-width:52em}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="disc" role="img" aria-label="Ilustrace betonového disku se zlatým kruhem"></div>
+  <div class="kicker">Floudisc.cz — nezávislý průvodce zázračným betonem</div>
+  <h1>Uvažujete o betonovém disku za&nbsp;12&nbsp;000&nbsp;Kč?</h1>
+  <p class="lede">Věnujte nám pět minut. Přečetli jsme, co o&nbsp;Flow Discu tvrdí jeho výrobce, vytáhli kalkulačku a&nbsp;periodickou tabulku — a&nbsp;možná vám <strong>ušetříme 11&nbsp;800&nbsp;Kč</strong>. Nezlobíme se, jen počítáme.</p>
+  <a class="cta" href="#co-to-je">Tak schválně&nbsp;↓</a>
+</header>
+
+<main class="wrap">
+
+<section id="co-to-je">
+  <div class="secnum">01 · Fakta</div>
+  <h2>Co Flow Disc opravdu je</h2>
+  <p>Flow Disc je kruhová deska prodávaná Centrem Serafín. Výrobce ji popisuje jako <em>„mocný portál Kosmických energií“</em>; materiálově jde o&nbsp;kompozit typu <strong>kamenivo&nbsp;+&nbsp;pojivo</strong> — tedy v&nbsp;principu betonový výrobek. Kamenivem je podle výrobce drcený křišťál (krystalický křemen, ~40&nbsp;%) a&nbsp;baryt (~20&nbsp;%), pojivo nese obchodní název CARBOMETUM®.</p>
+  <div class="facts">
+    <div class="fact"><b>417 mm</b><span>průměr</span></div>
+    <div class="fact"><b>5,5 kg</b><span>hmotnost</span></div>
+    <div class="fact"><b>12 000 Kč</b><span>základní cena</span></div>
+    <div class="fact"><b>18 800 Kč</b><span>„živý“ disk na zakázku</span></div>
+  </div>
+  <p>Aby cena dostala kontext, přepočítali jsme ji na kilogram a&nbsp;srovnali s&nbsp;jinými deskovitými materiály, které si můžete položit na podlahu:</p>
+  <div class="tablebox">
+  <table>
+    <tr><th>Materiál</th><th class="num">Cena za kg</th><th>Poznámka</th></tr>
+    <tr><td>Betonová dlažba (hobbymarket)</td><td class="num">~5 Kč</td><td>také beton, také kulatá varianta k mání</td></tr>
+    <tr><td>Leštěná žulová deska</td><td class="num">~400 Kč</td><td>přírodní kámen, milion let staré „posvátné geometrie“</td></tr>
+    <tr class="hl"><td>Flow Disc</td><td class="num">~2 180 Kč</td><td>beton s křišťálovým pískem</td></tr>
+    <tr><td>Ryzí stříbro</td><td class="num">~33 000 Kč</td><td>drahý kov, uznávaný i mimo esoteriku</td></tr>
+  </table>
+  </div>
+  <p class="note">Ceny dlažby a žuly jsou orientační tržní ceny; cena Flow Discu = 12 000 Kč / 5,5 kg. Flow Disc tedy stojí zhruba <strong>400× víc než srovnatelný beton</strong> — zbývá zjistit, co ten rozdíl vysvětluje.</p>
+</section>
+
+<section id="zlato">
+  <div class="secnum">02 · Kalkulačka</div>
+  <h2>„Miliardy atomů superčistého zlata“</h2>
+  <p>Výrobce uvádí, že směs obsahuje <em>„miliardy rozptýlených atomů superčistého Zlata (čistota vyšší než 99,99&nbsp;%) a&nbsp;také miliardy atomů Platiny“</em>. Miliardy! To zní velkolepě. Atomy jsou ale velmi, velmi malé — a&nbsp;přesně na tohle je dobré mít po ruce Avogadrovu konstantu. Posuňte si sami:</p>
+
+  <div class="calc">
+    <label for="atoms">Kolik miliard atomů zlata chcete?</label>
+    <input type="range" id="atoms" min="0" max="120" value="10" step="1" aria-describedby="calc-out">
+    <div class="readout" id="calc-out"><b id="c-atoms">10 miliard</b> atomů zlata</div>
+    <div class="rows">
+      <div class="row"><b id="c-mass">3,3 pikogramu</b><span>hmotnost</span></div>
+      <div class="row"><b id="c-value">0,000 000 008 Kč</b><span>hodnota (zlato ~2 500 Kč/g)</span></div>
+      <div class="row"><b id="c-ring">0,000 000 000 1 %</b><span>obyčejného snubního prstýnku (3 g)</span></div>
+    </div>
+  </div>
+
+  <p>Pro představu: běžný snubní prstýnek obsahuje kolem <strong>9&nbsp;000&nbsp;000&nbsp;000&nbsp;000 miliard</strong> atomů zlata. „Miliardy atomů“ ve Flow Discu jsou hmotnostně asi <strong>bilionkrát méně zlata, než máte na prstu</strong> — a&nbsp;hodnotově méně než miliardtina haléře. Není to lež. Je to jen ukázkový příklad, jak se dá velkým číslem říct „prakticky nic“.</p>
+</section>
+
+<section id="tvrzeni">
+  <div class="secnum">03 · Tvrzení vs. realita</div>
+  <h2>Co disk podle výrobce umí — a co na to fyzika</h2>
+  <p>Všechny citace pocházejí doslova z&nbsp;webu výrobce (odkazy a&nbsp;archivní kopie najdete <a href="#zdroje">ve zdrojích</a>). U&nbsp;každého tvrzení uvádíme, jak si stojí ve světle současného vědeckého poznání.</p>
+
+  <div class="claim">
+    <span class="verdict v-no">Bez důkazů</span>
+    <blockquote>„Působí pozitivně na stav čaker a Aury.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>Čakry ani aura nejsou měřitelné veličiny — žádný přístroj je nikdy nedetekoval a&nbsp;žádná studie neprokázala jejich existenci. Tvrzení o&nbsp;pozitivním působení na něco, co nelze změřit, nelze ani vyvrátit, ani potvrdit. Přesně proto se s&nbsp;ním tak dobře prodává.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-no">Bez mechanismu</span>
+    <blockquote>„Zlepšuje kvalitu okolního vzduchu.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>Křemen i&nbsp;baryt jsou chemicky inertní pevné látky. Vyleštěná deska nemá žádný mechanismus, kterým by filtrovala, ionizovala nebo jinak upravovala vzduch — na rozdíl od okna, které lze otevřít zdarma.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-meh">Zrnko pravdy (svědčící proti)</span>
+    <blockquote>„Očišťuje od škodlivého záření.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>Perlička: baryt se ve stavebnictví <strong>opravdu používá</strong> do takzvaných barytových omítek a&nbsp;betonů pro stínění rentgenových pracovišť. Jenže funguje jako pasivní stínění — musí stát <em>mezi</em> vámi a&nbsp;zdrojem záření, v&nbsp;tloušťkách řady centimetrů a&nbsp;přes celé stěny. Dvoucentimetrová podložka na podlaze vás „očistí“ od záření asi tak, jako vás deštník opřený v&nbsp;rohu ochrání před deštěm. Jediné vědecky vyzněné tvrzení v&nbsp;celém popisu je tedy zároveň ukázkou, jak se z&nbsp;reálné vlastnosti materiálu dělá magie.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-yes">Pravda — za 150 Kč</span>
+    <blockquote>„Masíruje reflexní body na chodidlech.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>Stání na tvrdém reliéfním povrchu skutečně tlačí do chodidel — to umí Flow Disc, akupresurní rohožka za 150&nbsp;Kč i&nbsp;kačírek na zahradě. Samotná reflexologie (tedy představa, že body na chodidle léčí vzdálené orgány) ovšem v&nbsp;kontrolovaných studiích opakovaně neuspěla.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-no">Viz kalkulačka</span>
+    <blockquote>„Dodává ve stopovém množství prospěšné látky.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>„Stopové množství“ je zde míněno opravdu doslova — viz <a href="#zlato">kalkulačka výše</a>. Pikogramy zlata uzavřené v&nbsp;pevné matrici se navíc nemají jak dostat do vašeho těla. A&nbsp;i&nbsp;kdyby se dostaly: zlato je biologicky inertní, tělo ho nijak nevyužívá.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-no">Pseudověda</span>
+    <blockquote>„Silný Tvarový Zářič… čistá esence Posvátné Kosmické Geometrie.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>„Tvarové zářiče“ jsou klasický pseudovědecký koncept: představa, že geometrický tvar sám o&nbsp;sobě vyzařuje energii. Fyzika žádné takové záření nezná, nikdy je nikdo nenaměřil a&nbsp;neexistuje mechanismus, kterým by tvar předmětu působil na okolí jinak než opticky a&nbsp;mechanicky. Kdyby tvary zářily, věděly by o&nbsp;tom především všechny kruhové předměty ve vaší kuchyni.</p>
+  </div>
+
+  <div class="claim">
+    <span class="verdict v-meh">Možná — ale ne díky betonu</span>
+    <blockquote>„Podporuje meditační stavy.“<span class="src">— centrumserafin.cz/flow-disc</span></blockquote>
+    <p>Tady budeme féroví: pokud si člověk vyhradí čas, postaví se na krásný předmět, do kterého investoval, a&nbsp;soustředí se na dech — velmi pravděpodobně se uvolní a&nbsp;bude se cítit lépe. To je skutečný a&nbsp;cenný efekt. Jen ho nezpůsobuje beton, ale <em>vy</em>. Více v&nbsp;další kapitole.</p>
+  </div>
+</section>
+
+<section id="placebo">
+  <div class="secnum">04 · Férově</div>
+  <h2>Proč se po něm lidé opravdu cítí líp</h2>
+  <p>Nechceme nikomu brát jeho zážitek. Recenze spokojených majitelů Flow Discu jsou nejspíš upřímné — a&nbsp;dají se vysvětlit dobře popsanými mechanismy:</p>
+  <p><strong>Placebo efekt.</strong> Očekávání úlevy prokazatelně spouští skutečné neurofyziologické změny — mozek umí tlumit bolest i&nbsp;stres jen na základě přesvědčení, že „to funguje“. Čím dražší a&nbsp;rituálnější prostředek, tím silnější efekt; 12&nbsp;000 Kč je z&nbsp;tohoto pohledu velmi účinná dávka.</p>
+  <p><strong>Rituál a&nbsp;pozornost.</strong> Deset minut denně v&nbsp;klidu, naboso, se zavřenýma očima — to je prostě krátká meditace, a&nbsp;ta má reálné, měřitelné přínosy. Fungovala by stejně na ručníku.</p>
+  <p><strong>Výběrové zkreslení.</strong> Kdo za disk zaplatil, má silnou motivaci vnímat zlepšení (psychologie tomu říká ospravedlnění nákupu) — a&nbsp;kdo zlepšení necítí, recenzi obvykle nepíše.</p>
+  <p>Dobrá zpráva: všechny tři mechanismy máte k&nbsp;dispozici zdarma.</p>
+</section>
+
+<section id="alternativy">
+  <div class="secnum">05 · Nákupní rádce</div>
+  <h2>Co si pořídit za 12 000 Kč místo toho</h2>
+  <p>Pokud vás láká to, co Flow Disc slibuje — klid, rituál, hezký předmět a&nbsp;masáž chodidel — dá se to poskládat výrazně levněji, včetně samotného betonového disku:</p>
+  <ul class="alt">
+    <li><span>Betonový kruhový šlapák (hobbymarket) — beton dodán, geometrie kruhová</span><b>199 Kč</b></li>
+    <li><span>Akupresurní rohožka — reflexní body chodidel vyřešeny</span><b>350 Kč</b></li>
+    <li><span>Roční předplatné meditační aplikace — „podpora meditačních stavů“</span><b>1 500 Kč</b></li>
+    <li><span>Čtyři poctivé masáže — harmonizace ověřená staletími</span><b>3 600 Kč</b></li>
+    <li><span>Pokojová rostlina — jediná položka, která skutečně zlepšuje vzduch</span><b>600 Kč</b></li>
+    <li><span>Kniha o kritickém myšlení — ochrana před zářením marketingu</span><b>450 Kč</b></li>
+  </ul>
+  <div class="alt-total"><span>Celkem, a ještě zbyde 5 301 Kč na cokoli</span><b>6 699 Kč</b></div>
+</section>
+
+<section id="faq">
+  <div class="secnum">06 · FAQ</div>
+  <h2>Časté otázky</h2>
+  <details>
+    <summary>Funguje Flow Disc?</summary>
+    <p>Pro deklarované účinky (čakry, aura, čištění vzduchu, tvarové záření, ochrana před zářením) neexistují žádné důkazy a&nbsp;odporují známé fyzice. Pocit uvolnění při jeho používání je skutečný — a&nbsp;vysvětlitelný placebem a&nbsp;relaxačním rituálem, které fungují i&nbsp;bez betonu.</p>
+  </details>
+  <details>
+    <summary>Je Flow Disc podvod?</summary>
+    <p>To slovo má právní význam, takže ho používat nebudeme. Konstatujeme fakta: je to kompozitní (betonový) disk za 12&nbsp;000 Kč, jehož slibované účinky nejsou ničím podloženy. Závěr si udělejte sami — od toho tenhle web je.</p>
+  </details>
+  <details>
+    <summary>Vy jen hejtujete. Vyzkoušeli jste ho vůbec?</summary>
+    <p>Ne — a&nbsp;je to záměr. Osobní dojem je přesně ten kanál, kterým placebo funguje; proto se léky testují zaslepeně, ne „vyzkoušel jsem a&nbsp;cítím to“. Hodnotíme ověřitelná tvrzení výrobce, a&nbsp;ta osobní zkušenost nevyžadují: složení, fyzikální mechanismy a&nbsp;cena se dají posoudit z&nbsp;veřejných informací.</p>
+  </details>
+  <details>
+    <summary>Komu tenhle web patří? Jste konkurence?</summary>
+    <p>Nejsme. Neprodáváme nic — ani disky, ani reklamu, ani „lepší“ alternativu. Tenhle web je soukromý vzdělávací projekt a&nbsp;jeho jediný cíl je, abyste před nákupem za 12&nbsp;000 Kč měli k&nbsp;dispozici i&nbsp;druhý pohled.</p>
+  </details>
+  <details>
+    <summary>Co když mi Flow Disc pomáhá?</summary>
+    <p>Tak si ho užívejte! Nic vám nebereme — uvolnění, rituál a&nbsp;hezký předmět v&nbsp;obýváku jsou skutečné hodnoty. Jen je dobré vědět, že ten efekt vytváříte vy, ne miliardy atomů zlata.</p>
+  </details>
+</section>
+
+<section id="zdroje">
+  <div class="secnum">07 · Zdroje a metodika</div>
+  <h2>Odkud citujeme</h2>
+  <p>Všechna tvrzení výrobce citovaná na tomto webu pocházejí z&nbsp;oficiálních stránek Centra Serafín ve znění ke dni <strong>7.&nbsp;7.&nbsp;2026</strong>:</p>
+  <p>
+    <a href="https://www.centrumserafin.cz/flow-disc/" rel="nofollow">Flow Disc — popis a&nbsp;účinky</a> ·
+    <a href="https://www.centrumserafin.cz/flow-disc-slozeni/" rel="nofollow">Složení (směs CCB)</a> ·
+    <a href="https://www.centrumserafin.cz/flow-disc-order/" rel="nofollow">Ceník a&nbsp;objednávka</a> ·
+    <a href="https://www.centrumserafin.cz/zkusenosti-s-flow-discem/" rel="nofollow">Zkušenosti zákazníků</a>
+  </p>
+  <p>Archivní kopie stránek k&nbsp;témuž dni jsou uloženy ve <a href="https://web.archive.org/web/2026*/centrumserafin.cz" rel="nofollow">Wayback Machine</a>, kdyby se znění časem měnilo.</p>
+  <p>Pokud se chcete o&nbsp;kritickém myšlení a&nbsp;pseudovědě dozvědět víc, doporučujeme <a href="https://www.sisyfos.cz/" rel="nofollow">Český klub skeptiků Sisyfos</a>.</p>
+  <p class="note">Výpočty: miliarda atomů zlata = 10⁹&nbsp;/&nbsp;6,022×10²³&nbsp;mol⁻¹ × 196,97&nbsp;g/mol ≈ 3,3×10⁻¹³&nbsp;g. Cena zlata uvažována ~2&nbsp;500&nbsp;Kč/g. Snubní prstýnek uvažován jako 3&nbsp;g ryzího zlata (reálně bývá 14karátový, takže obsahuje „jen“ ~5&nbsp;bilionů miliard atomů zlata — na závěru to nic nemění).</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>O tomto webu.</strong> Floudisc.cz je nezávislý satirický a&nbsp;vzdělávací projekt. Nejsme nijak spojeni s&nbsp;Centrem Serafín ani s&nbsp;výrobcem produktu Flow Disc a&nbsp;nic zde neprodáváme. Označení Flow Disc a&nbsp;CARBOMETUM® mohou být ochrannými známkami příslušných vlastníků; užíváme je výhradně informativně, v&nbsp;rámci citace a&nbsp;kritiky veřejně publikovaných obchodních tvrzení.</p>
+    <p>Citovaná tvrzení výrobce odpovídají znění jeho webu ke dni 7.&nbsp;7.&nbsp;2026. Hodnotící pasáže jsou názorem autorů opřeným o&nbsp;uvedené zdroje a&nbsp;současné vědecké poznání. Pokud jsme se v&nbsp;jakémkoli faktu zmýlili, rádi ho opravíme.</p>
+    <p>Tento web nesbírá žádná osobní data, nepoužívá cookies ani analytiku. Váš klid nechceme harmonizovat, jen informovat.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var NA = 6.02214076e23;      // Avogadrova konstanta
+  var M_AU = 196.96657;        // molární hmotnost zlata g/mol
+  var PRICE_PER_G = 2500;      // Kč/g, orientačně
+  var RING_G = 3;              // snubní prstýnek, g ryzího zlata
+
+  var slider = document.getElementById('atoms');
+  var elAtoms = document.getElementById('c-atoms');
+  var elMass = document.getElementById('c-mass');
+  var elValue = document.getElementById('c-value');
+  var elRing = document.getElementById('c-ring');
+
+  function fmt(n, digits){
+    return n.toLocaleString('cs-CZ', {maximumFractionDigits: digits === undefined ? 1 : digits});
+  }
+
+  function fmtMass(grams){
+    if (grams < 1e-9) return fmt(grams * 1e12) + ' pikogramu';
+    if (grams < 1e-6) return fmt(grams * 1e9) + ' nanogramu';
+    if (grams < 1e-3) return fmt(grams * 1e6) + ' mikrogramu';
+    if (grams < 1)    return fmt(grams * 1e3) + ' miligramu';
+    return fmt(grams, 2) + ' gramu';
+  }
+
+  function fmtCZK(v){
+    if (v >= 0.01) return fmt(v, 2) + ' Kč';
+    // rozepsat malé částky s nulami, ať je vidět ta bída
+    var s = v.toExponential(1);
+    var parts = s.split('e-');
+    var mant = parseFloat(parts[0]);
+    var exp = parseInt(parts[1], 10);
+    var zeros = '0,' + '0'.repeat(exp - 1);
+    return (zeros + String(Math.round(mant * 10))).replace(/(\d)(?=(\d{3})+$)/g, '$1') + ' Kč';
+  }
+
+  function sup(n){
+    var map = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};
+    return String(n).replace(/\d/g, function(d){ return map[d]; });
+  }
+
+  function update(){
+    // logaritmický posuvník: 0..120 -> 1..10^12 miliard
+    var billions = Math.pow(10, slider.value / 10);
+    var atoms = billions * 1e9;
+    var grams = atoms / NA * M_AU;
+    var value = grams * PRICE_PER_G;
+    var ringAtoms = RING_G / M_AU * NA;
+    var ringPct = atoms / ringAtoms * 100;
+
+    elAtoms.textContent = billions < 1e3
+      ? fmt(billions, 0) + (billions === 1 ? ' miliarda' : billions < 5 ? ' miliardy' : ' miliard')
+      : fmt(billions, 0) + ' miliard';
+    elMass.textContent = fmtMass(grams);
+    elValue.textContent = fmtCZK(value);
+    if (ringPct >= 0.01) {
+      elRing.textContent = fmt(ringPct, 2) + ' %';
+    } else {
+      var ex = ringPct.toExponential(1).split('e-');
+      elRing.textContent = ex[0].replace('.', ',') + ' × 10⁻' + sup(parseInt(ex[1], 10)) + ' %';
+    }
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+
+</body>
+</html>
