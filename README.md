@@ -15,13 +15,40 @@ python3 -m http.server 8123
 # → http://localhost:8123
 ```
 
-## Nasazení (Cloudflare Pages, zdarma)
+## Nasazení
 
-1. Nahraj repo na GitHub (nebo použij přímý upload v Cloudflare dashboardu).
-2. Cloudflare Pages → Create project → připoj repo, žádný build command, output = kořen.
-3. Custom domain → `floudisc.cz` → uprav DNS záznamy dle instrukcí (CNAME/A na Pages).
+Web běží na GitHub Pages z repa https://github.com/koutnydavid92/floudisc
+(větev `main`, kořen). Každý push na `main` = automatický deploy.
+Vlastní doména je určena souborem `CNAME` (floudisc.cz).
 
-Alternativy: GitHub Pages (repo → Settings → Pages), Netlify (drag & drop).
+### DNS u registrátora domény floudisc.cz
+
+A záznamy pro apex (`@`):
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+Volitelně `www` jako CNAME na `koutnydavid92.github.io`.
+
+Po rozběhnutí DNS zapnout HTTPS vynucení:
+`gh api repos/koutnydavid92/floudisc/pages -X PUT -F https_enforced=true`
+(GitHub si nejdřív musí vystavit certifikát, může trvat ~hodinu.)
+
+### E-mail info@floudisc.cz
+
+Adresa je jen forwarding, žádná schránka. Dvě cesty:
+
+- **Registrátor**: většina českých registrátorů (Wedos, Forpsi…) nabízí
+  e-mailové přesměrování zdarma v administraci domény — přesměrovat
+  `info@floudisc.cz` na soukromý Gmail.
+- **Cloudflare Email Routing** (zdarma): převést DNS domény na Cloudflare,
+  pak Email → Email Routing → custom address `info@` → cíl Gmail.
+  Cloudflare sám nastaví MX záznamy. (DNS pro Pages pak vede taky přes
+  Cloudflare — A záznamy výše zůstávají stejné.)
 
 ## Pravidla hry (důležité — právní pozice webu)
 
