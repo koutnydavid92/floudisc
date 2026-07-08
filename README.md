@@ -68,9 +68,14 @@ Web je ubránitelný jako legitimní kritika/satira jen dokud platí:
 
 ## Analytika
 
-Google Analytics 4 — účet „David Koutný", property `floudisc.cz`
-(properties/544633465), measurement ID `G-6VWPEN6GH2`. Tag je vložený
-přímo v `index.html` v `<head>`.
+Vercel Web Analytics (bez cookies, není potřeba consent lišta) — zapnutá
+na projektu `floudisc` (Hobby: 50 000 eventů/měsíc, 30 dní historie).
+Skript `/_vercel/insights/script.js` je vložený v `index.html` v `<head>`.
+Přehledy: vercel.com → projekt floudisc → Analytics.
+
+Pozn.: GA4 property `floudisc.cz` (G-6VWPEN6GH2, properties/544633465)
+existuje, ale tag byl z webu odstraněn 8. 7. 2026 — data od té doby
+netečou; property lze případně smazat v GA administraci.
 
 ## Údržba obsahu
 
