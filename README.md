@@ -17,26 +17,23 @@ python3 -m http.server 8123
 
 ## Nasazení
 
-Web běží na GitHub Pages z repa https://github.com/koutnydavid92/floudisc
-(větev `main`, kořen). Každý push na `main` = automatický deploy.
-Vlastní doména je určena souborem `CNAME` (floudisc.cz).
+Web běží na Vercelu (projekt `floudisc`, účet koutnydavid92), propojeno
+s repem https://github.com/koutnydavid92/floudisc. Každý push na `main`
+= automatický deploy. Produkce: https://floudisc.vercel.app
 
-### DNS u registrátora domény floudisc.cz
+Ruční deploy: `vercel deploy --prod`
 
-A záznamy pro apex (`@`):
+### DNS u registrátora (Websupport)
+
+V administraci DNS domény floudisc.cz přidat:
 
 ```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
+A      @      76.76.21.21
+CNAME  www    cname.vercel-dns.com
 ```
 
-Volitelně `www` jako CNAME na `koutnydavid92.github.io`.
-
-Po rozběhnutí DNS zapnout HTTPS vynucení:
-`gh api repos/koutnydavid92/floudisc/pages -X PUT -F https_enforced=true`
-(GitHub si nejdřív musí vystavit certifikát, může trvat ~hodinu.)
+Vercel si pak sám ověří doménu a vystaví HTTPS certifikát
+(stav: `vercel domains inspect floudisc.cz`).
 
 ### E-mail info@floudisc.cz
 
