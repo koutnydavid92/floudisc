@@ -66,6 +66,12 @@ Web je ubránitelný jako legitimní kritika/satira jen dokud platí:
    - https://web.archive.org/web/2026/https://www.centrumserafin.cz/zkusenosti-s-flow-discem/
    Při změně jejich webu archivovat znovu (https://web.archive.org/save/...).
 
+## Analytika
+
+Google Analytics 4 — účet „David Koutný", property `floudisc.cz`
+(properties/544633465), measurement ID `G-6VWPEN6GH2`. Tag je vložený
+přímo v `index.html` v `<head>`.
+
 ## Údržba obsahu
 
 Ceny a citace odpovídají stavu webu výrobce k 7. 7. 2026. Při aktualizaci
